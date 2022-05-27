@@ -16,7 +16,7 @@ export default function Home() {
   ]
   return (
     <div className={styles.container}>
-      <div style={{ fontSize: "40px",fontWeight:'400',fontFamily: 'serif' }}>Welcome to Sameer's Portfolio. </div><br/>
+      <div style={{ fontSize: "40px",fontWeight:'400',fontFamily: 'serif' }}>Welcome to Sameer&apos;s Portfolio. </div><br/>
       <div style={{ fontSize: "30px", fontWeight:'lighter',fontFamily: 'serif' }}>We are working hard to do our best design on this website<br />Until then we look forward to serve you on our socials. </div>
       <Clocks />
       <div style={{ margin: "auto" }}>
