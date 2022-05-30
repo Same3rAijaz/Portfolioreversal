@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Sameer from '../../assets/s2.jpg'
 
 export default function FirstSection() {
+    const aplha = ['FULL STACK WEB DEVELOPER.!!', 'MERN STACK WEB DEVELOPER.', 'MEVN STACK WEB DEVELOPER.','Copy/Paste Professional']
     return (<>
         <div className={styles.BGimagemain}>
             <span id="Intro"></span>
@@ -11,12 +12,12 @@ export default function FirstSection() {
                 <div>
                     <div style={{ borderRadius:"50%",float: "right",marginTop:"-30px",padding:"20px" }}> 
 
-                        <Image  style={{borderRadius:"50%"}} width={290} height={300} src={Sameer} />
+                        <Image alt="Sameerimg" style={{borderRadius:"50%"}} width={290} height={300} src={Sameer} />
                     </div>
                     <h1>Hello, My name is Sameer Aijaz.</h1>
                     <div style={{ display: "flex" }}>
                         <h2>And I am <Typical
-                            steps={['FULL STACK WEB DEVELOPER.!!', 10000, 'MERN STACK WEB DEVELOPER.!!', 10000, 'MEVN STACK WEB DEVELOPER.!!', 10000, 'Copy/Paste Professional', 10000]}
+                            steps={[aplha[0], 10000,aplha[1], 10000,aplha[2], 10000,aplha[3], 10000]}
                             loop={Infinity}
                             wrapper="span"
                         /></h2>
