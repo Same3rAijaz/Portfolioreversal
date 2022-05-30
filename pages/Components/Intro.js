@@ -23,8 +23,8 @@ export default function FirstSection() {
                         /></h2>
 
                     </div>
-                    <blockquote>"Programming isn't about what you know; it's about what you can figure out.” - Chris Pine</blockquote>
-                    <blockquote>"The only way to learn a new programming language is by writing programs in it." - Dennis Ritchie</blockquote>
+                    <blockquote>&quot;Programming isn&lsquo;t about what you know; it&lsquo;s about what you can figure out.&quot; - Chris Pine</blockquote>
+                    <blockquote>&quot;The only way to learn a new programming language is by writing programs in it.&quot; - Dennis Ritchie</blockquote>
                 </div>
             </div>
         </div>
