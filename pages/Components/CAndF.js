@@ -4,21 +4,14 @@ import Sam from "../../assets/sameercall.jpg"
 import styles from "../../styles/CAndF.module.css"
 
 export default function CAndF() {
-    const links = ["",
-    ""
-    , "",
-    "",
-    "",
-    ""
-    , ""
-  ]
+  
     return (
         <div className={styles.CandFmain} id="CandF">
             <Head>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
             </Head>
             <div className={styles.card} style={{marginTop:"10%"}}>
-                <Image  style={{borderRadius:"50%"}} src={Sam} width={200} height={200}/>
+                <Image alt='Hello'  style={{borderRadius:"50%"}} src={Sam} width={200} height={200}/>
                 <h1>Sameer Aijaz</h1>
                 <p className={styles.title}>Full Stack Web Developer.</p>
                 <p>SMI University</p>

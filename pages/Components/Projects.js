@@ -15,13 +15,13 @@ export default function Projects() {
             <div className={styles.cardmain}>
 
             <div className={styles.cards}>
-                <Image height={900} className={styles.cardimage} src={visitor}/>
+                <Image alt="hello1" height={900} className={styles.cardimage} src={visitor}/>
                 <div className={styles.cardtext}>
                     <h2>The Visitor</h2><h4 style={{margin:"30px"}}>Visiting management and appointment system</h4>
                 </div>
             </div>
             <div className={styles.cards}>
-                <Image height={900} className={styles.cardimage} src={xeoncity}/>
+                <Image alt="hello12" height={900} className={styles.cardimage} src={xeoncity}/>
                 <div className={styles.cardtext}>
                     <h2>XEON CITY</h2><h4 style={{margin:"30px"}}>E-Commerce website of electronic goods</h4>
                 </div>
@@ -29,7 +29,7 @@ export default function Projects() {
             </div>
             <div className={styles.cardmain}>
             <div className={styles.cards}>
-                <Image height={900} className={styles.cardimage} src={technodix}/>
+                <Image alt="hello123" height={900} className={styles.cardimage} src={technodix}/>
                 <div className={styles.cardtext}>
                     <h2>TECHNODIX</h2><h4 style={{margin:"30px"}}>Blog website for technology updates</h4>
                 </div>
