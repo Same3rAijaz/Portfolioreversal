@@ -1,12 +1,5 @@
 .container {
-  padding: 0 2rem;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding-top: 15%;
-  background-color: #151515;
-  color: white;
-  height: 100vh;
+  /* padding: 0 2rem; */
 }
 
 .main {

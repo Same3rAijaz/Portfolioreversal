@@ -1,0 +1,38 @@
+.BGimagemain {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/mainbg.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    position: absolute;
+    color: white;
+}
+
+.Hih0 {
+    background-color: rgba(255, 255, 255, 0.732);
+    border-radius: 15px;
+    z-index: 1;
+    width: 55%;
+    margin-block: 13%;
+    margin-inline: 20%;
+    padding: 10px;
+    min-height: 55%;
+    max-height: fit-content;
+    color: rgb(42, 42, 81);
+}
+
+.Myimg {
+    z-index: 1;
+    height: 100px;
+    position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
+    .Hih0 {
+        margin: 0px;
+        width: 100vw;
+        background-color: rgba(0, 165, 168, 0.573);
+        color: white;
+    }
+}

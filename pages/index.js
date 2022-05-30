@@ -1,63 +1,46 @@
-import styles from '../styles/Home.module.css'
+import { faArrowAltCircleUp, faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookF, faLinkedinIn, faInstagram, faTwitter, faGoogle, faWhatsapp, faGithub } from '@fortawesome/free-brands-svg-icons'
-import Clocks from "./Components/Clock";
-import Link from 'next/link';
+import Head from 'next/head'
+import Link from 'next/link'
+import { useRef } from 'react'
+import styles from '../styles/Home.module.css'
+import Intro from './Components/Intro'
+import AboutAndSkills from "./Components/AboutAndSkills"
+import Projects from './Components/Projects'
+import CAndF from './Components/CAndF'
 export default function Home() {
 
-  const icons = [faFacebookF, faLinkedinIn, faInstagram, faTwitter, faGoogle, faWhatsapp, faGithub]
-  const links = ["https://www.facebook.com/muhammadsameer.aijaz",
-    "https://www.linkedin.com/in/sameer-aijaz-a7198b216/"
-    , "https://www.instagram.com/same3r_a1jaz/",
-    "https://twitter.com/AijaxSam",
-    "mailto:aijazsameer5@gmail.com",
-    "https://wa.me/923114672433?text=I'm%20interested%20in%20your%20profile%20"
-    , "https://github.com/Same3rAijaz"
-  ]
+  const Linkvalue = useRef(0);
+
   return (
     <div className={styles.container}>
-      <div style={{ fontSize: "40px",fontWeight:'400',fontFamily: 'serif' }}>Welcome to Sameer&apos;s Portfolio. </div><br/>
-      <div style={{ fontSize: "30px", fontWeight:'lighter',fontFamily: 'serif' }}>We are working hard to do our best design on this website<br />Until then we look forward to serve you on our socials. </div>
-      <Clocks />
-      <div style={{ margin: "auto" }}>
-        <div>
-          <Link target="_blank" href={links[0]}  >
-            <span style={{ padding: "20px" }}>
-              <FontAwesomeIcon icon={icons[0]} />
-            </span>
-          </Link>
-          <Link target="_blank" href={links[1]}  >
-            <span style={{ padding: "20px" }}>
-              <FontAwesomeIcon icon={icons[1]} />
-            </span>
-          </Link>
-          <Link target="_blank" href={links[2]}  >
-            <span style={{ padding: "20px" }}>
-              <FontAwesomeIcon icon={icons[2]} />
-            </span>
-          </Link>
-          <Link target="_blank" href={links[3]}  >
-            <span style={{ padding: "20px" }}>
-              <FontAwesomeIcon icon={icons[3]} />
-            </span>
-          </Link>
-          <Link target="_blank" href={links[4]}  >
-            <span style={{ padding: "20px" }}>
-              <FontAwesomeIcon icon={icons[4]} />
-            </span>
-          </Link>
-          <Link target="_blank" href={links[5]}  >
-            <span style={{ padding: "20px" }}>
-              <FontAwesomeIcon icon={icons[5]} />
-            </span>
-          </Link>
-          <Link target="_blank" href={links[6]}  >
-            <span style={{ padding: "20px" }}>
-              <FontAwesomeIcon icon={icons[6  ]} />
-            </span>
-          </Link>
-        </div>
+      <Head>
+        <title>Sameer Aijaz</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      {/* Links */}
+      <div style={{ zIndex: "1000", position: "fixed", width: "200px", height: "200px", right: "10px", top: "60vh" }}>
+        <Link href={Linkvalue.current == 0 ? "#Intro" : Linkvalue.current == 1 ? "#AboutAndSkills" : Linkvalue.current == 2 ? "#Projects" : "#CandF"}>
+          <button onClick={() => Linkvalue.current > 0 ? Linkvalue.current-- : null} style={{ backgroundColor: "rgba(21,21,21,0.9)", width: "50px", height: "50px", borderRadius: "100%", float: "right", marginRight: "20px", marginTop: "20px" }}>
+            <FontAwesomeIcon icon={faArrowUp} style={{ color: "white" }} />
+          </button>
+        </Link>
+
+        <Link href={Linkvalue.current == 0 ? "#Intro" : Linkvalue.current == 1 ? "#AboutAndSkills" : Linkvalue.current == 2 ? "#Projects" : "#CandF"}>
+          <button onClick={() => Linkvalue.current < 3 ? Linkvalue.current++ : null} style={{ backgroundColor: "rgba(21,21,21,0.9)", position: 'fixed', marginTop: "120px", right: "10px", bottom: "120px", width: "50px", height: "50px", borderRadius: "100%", float: "right", marginRight: "20px", marginTop: "20px" }}>
+            <FontAwesomeIcon icon={faArrowDown} style={{ color: "white" }} />
+            {console.log(Linkvalue.current)}
+          </button>
+        </Link>
       </div>
+
+
+
+
+      <Intro />
+      <AboutAndSkills />
+      <Projects />
+      <CAndF />
     </div>
   )
 }

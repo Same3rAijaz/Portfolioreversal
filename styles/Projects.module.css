@@ -1,0 +1,52 @@
+.Projectss{
+    position: absolute;
+    margin-top: 200vh;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat    ;
+    background-image: url(../assets/projectsbi.jpg);
+}
+
+
+.cardmain{
+    display: flex;
+    margin-top: 40px;
+    border-radius: 20%;
+}
+.cards{
+    margin: auto;
+    /* background-color: aqua; */
+    width: 40%;
+    height: 35vh;
+}
+.cardimage{
+    z-index: 0;
+}
+
+.cardtext{
+    position: absolute;
+    margin-top: -5.5%;
+    width: 600px;
+    display: flex;
+    padding-inline: 15px;
+    color: white;
+    font-weight:100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(240, 248, 255, 0.096);
+}
+@media only screen and (max-width: 600px) {
+.cardtext{
+    width: 100%;
+}
+.cardmain{
+    display:block;
+    margin-top: 40px;
+    border-radius: 20%;
+}
+.cards{
+        /* background-color: aqua; */
+        width: 100vw;
+        height: 35vh;
+    }   
+}
