@@ -15,13 +15,13 @@ export const projects = {
     {
       title: 'The Visitor',
       description: 'Visitor and appointment management system.  ',
-      link: 'http://unaccountable-crack.surge.sh/login',
+      link: 'http://unaccountable-crack.surge.sh',
       github: ''
     },
     {
       title: 'Technodix',
       description: 'Bloging site on MERN for tech and inventions.',
-      link: 'https://sordid-town.surge.sh/about',
+      link: 'https://sordid-town.surge.sh',
     },
     {
       title: 'XEON CITY',
