@@ -28,10 +28,10 @@ export default function Hero() {
       <h1 className="mt-5 mb-4">{hero.title}</h1>
       <p className="text-lg">{hero.desc}</p>
       {/* <Link href='/static/sameers_cv.pdf' download> */}
-        <a href='/static/sameers_cv.pdf' target="_blank" className='' download>
-          <button type="button" className="py-2 mt-4 px-4  bg-blue-400 hover:bg-blue-100 focus:ring-pink-500 text-dark focus:ring-offset-pink-200 text-red-500 w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
-            Download Resume
-          </button>
+        <a href='/static/sameers_cv.pdf' target="_blank" className='my-2' download>
+            <button className={(theme=='light'?"text-dark":"text-light")}>
+              Download Resume!!
+              </button>
         </a>
       {/* </Link> */}
     </div>
