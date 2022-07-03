@@ -26,7 +26,7 @@ export const projects = {
     {
       title: 'XEON CITY',
       description: 'E-Commerce site MERN (local project)',
-      link: 'cheerful-copy.surge.sh',
+      link: 'https://cheerful-copy.surge.sh',
     }
   ]
 };
