@@ -65,7 +65,7 @@ export const contact = {
   linkedin: 'https://www.linkedin.com/in/sameer-aijaz-a7198b216/',
   facebook:'https://www.facebook.com/muhammadsameer.aijaz',
   instagram:'https://www.instagram.com/same3r_a1jaz/',
-  whatsapp:"https://wa.me/923114672433?text=I'm%20interested%20in%20your%20profile%20",
+  whatsapp:"https://wa.me/923000134956?text=I'm%20interested%20in%20your%20profile%20",
   twitter:"https://twitter.com/AijaxSam"
 
 };
