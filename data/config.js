@@ -37,7 +37,7 @@ export const stack = {
     'HTML 5',
     'CSS 3',
     'JavaScript',
-    'Flash',
+    'Flask',
     'Typescript',
     'Reactjs',
     'MongoDB',
